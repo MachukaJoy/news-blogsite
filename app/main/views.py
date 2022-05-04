@@ -14,6 +14,12 @@ def source():
     general_news=get_source('general')
     return render_template('source.html',general_news=general_news)   
 
+@main.route('/source/<string:source>')
+def source_articles(source):
+    general_news=get_source('general')  
+    articles=get_articles(source)
+    return render_template('source_articles.html',articles=articles,general_news=general_news)   
+
 
 @main.route('/article')
 def article():
