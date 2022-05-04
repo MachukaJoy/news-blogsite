@@ -57,7 +57,7 @@ pip install Flask-Script
   $ ./start.sh
 
 ## Live-Site
-## [LIVE SITE](https://kelele-news.herokuapp.com/)
+## [LIVE SITE](https://news-blogsite.herokuapp.com/)
 
 ## Known Bugs
 There are not any known bugs as at now. But feel free to let us know should you find any.
