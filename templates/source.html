@@ -1,1 +1,12 @@
-<h1>source</h1>
+{% block source%}
+
+<ul class="list-group">
+  <li class="list-group-item active">
+    <H2>News Sources</H2>
+  </li>
+  {% for news in general_news %}
+  <a class="list-group-item" href="{{news.url}}">{{news.name}}</a>
+  {% endfor %}
+</ul>
+
+{% endblock%}
