@@ -1,6 +1,6 @@
 {%  extends 'base.html' %}
 {% block content%}
-<div class="container-fluid">
+<div class="container-fluid" mt-4>
   <div class="row">
     <div class="col-lg-3">
       <div class="sticky-top">
@@ -9,6 +9,7 @@
       </div>
     </div>
     <div class="col-lg-9">
+      <h2 class="text-center"> HEADLINES</h2>
       <div class="row">
         {%for article in articles %}
         <div class="col-lg-4">
