@@ -51,6 +51,9 @@ pip install Flask-Script<br><br>
   chmod a+x start.sh
   ./start.sh
 
+* To run the unitests run: <br>
+python manage.py test
+
 ## Live-Site
 ## [LIVE SITE](https://news-blogsite.herokuapp.com/)
 
