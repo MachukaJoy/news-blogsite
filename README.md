@@ -26,35 +26,30 @@ As a user I would like to:
 * pip
 * virtualenv
 
-* Clone repo
+* Clone repo<br>
 HTTPS: `git clone https://github.com/MachukaJoy/PasswordLocker.git`<br>
 SSH: `git clone git@github.com:MachukaJoy/PasswordLocker.git`
 
 After cloning cd into the directory and create a virtual environment name it virtual then activate it and proceed to install dependencies beloe using pip
 
-* Creating virtual environment 
-  python -m venv --without-pip virtual
-  source virtual/Scripts/activate
-  curl https://bootstrap.pypa.io/get-pip.py | python
-  source virtual/bin/activate
+* Creating virtual environment <br>
+  python -m venv --without-pip virtual<br>
+  source virtual/Scripts/activate<br>
+  curl https://bootstrap.pypa.io/get-pip.py | python<br>
+  source virtual/bin/activate<br>
 
-* Necessary dependencies
-pip install Flask
-pip install Flask-Bootstrap
-pip install Flask-Script
-* Can run on any operating system.
-* Run by running the run.py file<br>
+* Necessary dependencies <br>
+pip install Flask<br>
+pip install Flask-Bootstrap<br>
+pip install Flask-Script<br><br>
 
-* Visit https://newsapi.org/ to get an API key.
-* in the start.sh file replace the API key with your key
-
-  export NEWS_API_KEY='<Your-Api-Key>'
-  python3 manage.py server
-* Insert the API Key you received from News Api where <Your-Api-Key> is.
+* Visit https://newsapi.org/ to get an API key then in the start.sh file replace the API key with your key as below:
+  - export NEWS_API_KEY='<Your-Api-Key>'<br>
+  - python3 manage.py server
 
 * To run the application, in your terminal:
-  $ chmod a+x start.sh
-  $ ./start.sh
+  chmod a+x start.sh
+  ./start.sh
 
 ## Live-Site
 ## [LIVE SITE](https://news-blogsite.herokuapp.com/)
