@@ -1,0 +1,32 @@
+{%  extends 'base.html' %}
+{% block content%}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="sticky-top">
+        {% block source %} {% include
+            "source.html" %} {% endblock %}
+      </div>
+    </div>
+    <div class="col-lg-9">
+      <div class="row">
+        {%for article in articles %}
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="{{article.urlToImage}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{{article.title}}</h5>
+              <p class="card-text">{{article.description}}</p>
+              <p class="card-text">{{article.publishedAt }}</p>
+              <a href="{{article.url}}" class="btn btn-warning">Read article</a>
+            </div>
+          </div>
+        </div>
+        {% endfor%}
+      </div>
+    </div>
+
+
+  </div>
+</div>
+{% endblock %}

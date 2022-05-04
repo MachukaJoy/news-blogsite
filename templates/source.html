@@ -2,11 +2,22 @@
 
 <ul class="list-group">
   <li class="list-group-item active">
-    <H2>News Sources</H2>
+    <h2>News Sources</h2>
   </li>
-  {% for news in general_news %}
-  <a class="list-group-item" href="{{news.url}}">{{news.name}}</a>
-  {% endfor %}
+  <div class="container-fluid">
+    <div>
+      {% for news in general_news %}
+      <div>
+        <div" id="name">
+        <h4><a href="/source/{{news.id}}">{{news.name}}</a></h4>
+      </div>
+      <div>
+        {% endfor%}
+
+        {% endblock%}
+      </div>
+    </div>
+  </div>
 </ul>
 
 {% endblock%}
