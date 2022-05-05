@@ -7,7 +7,7 @@ from ..requests import get_articles
 def index():
     general_news=get_source('general')
     articles=get_articles()
-    return render_template('home.html',general_news=general_news,articles=articles)
+    return render_template('home.html', general_news=general_news, articles=articles)
 
 @main.route('/source')
 def source():
@@ -23,6 +23,5 @@ def source_articles(source):
 
 @main.route('/article')
 def article():
-    # title= 'Articles'
     articles=get_articles()
     return render_template('article.html',articles= articles)
