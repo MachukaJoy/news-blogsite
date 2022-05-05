@@ -1,7 +1,7 @@
 {% block content %}
 
-<h2 class="tex-center mt-4"> NEWS HEADLINES </h2>
-{%for article in articles %}
+<h2 class="text-center mt-4"> NEWS HEADLINES </h2>
+{% for article in articles %}
 <div class="col-lg-4">
   <div class="card">
     <img src="{{article.urlToImage}}" class="card-img-top" alt="..." />
@@ -13,4 +13,4 @@
     </div>
   </div>
 </div>
-{% endfor%} {% endblock %}
+{% endfor %}{% endblock %}
